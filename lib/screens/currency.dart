@@ -32,7 +32,7 @@ class _CurrencyState extends State<Currency> {
 
   Future _getData()async{
 
-    final url ="http://192.168.1.5:5000/CU";
+    final url ="http://192.168.1.5:5000/CU";// add your own domain,here it runs on localhost
 
     final response = await http.get(Uri.parse(url));
     final data = jsonDecode(response.body);
