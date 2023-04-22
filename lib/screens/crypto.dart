@@ -31,7 +31,7 @@ class _CryptoState extends State<Crypto> {
 
 
   Future _getData()async{
-    final url =  "http://192.168.1.5:5000/CR";
+    final url =  "http://192.168.1.5:5000/CR";// add your own domain,here it runs on localhost
     final response = await http.get(Uri.parse(url));
     final data = jsonDecode(response.body);
     return data;
