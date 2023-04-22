@@ -32,7 +32,7 @@ class _TopLosersState extends State<TopLosers> {
   int _colorIndex2=1;
 
   Future _getData()async{
-    final url = "http://192.168.1.5:5000/TL";
+    final url = "http://192.168.1.5:5000/TL";// add your own domain,here it runs on localhost
     final response = await http.get(Uri.parse(url));
     final data = jsonDecode(response.body);
     return data;
